@@ -1,0 +1,99 @@
+/* Define CSS variables using the site's selected color scheme */
+:root {
+    --primary-color: #264969;
+    --secondary-color:#ff0000;
+    --accent1-color: #070707;
+    --accent2-color: #ffffff;
+    --body-font: 'Roboto', sans-serif;
+    --heading-font: 'Oswald', sans-serif;
+}
+
+/* Reset box-model properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the entire body */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+}
+
+/* Limit page width and center content */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Style headings */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Apply consistent margins and padding */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Remove underlines from social media links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Style the hero section with relative positioning */
+.hero {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Style the hero image to fill the container */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Style the h1 heading overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-family: var(--heading-font);
+    border-radius: 8px;
+}
+
+/* Style the article overlay */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    max-width: 60%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the image inside the article */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: 100px;
+    margin-left: 12px;
+    border-radius: 8px;
+    
+}
+
