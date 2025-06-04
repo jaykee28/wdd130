@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting Adventures</title>
+    <meta name="description" content="Get in touch with Whitewater Rafting Adventures! Find our contact details, reach out via our contact form, or visit our location for thrilling rafting experiences.">
+    <meta name="author" content="Jacqueline Mufetu">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <img src="images/wwr-logo.jpg" alt="Whitewater Rafting Logo" class="logo">
+        <h1>Whitewater Rafting</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for inquiries, reservations, or suggestions.</p>
+
+            <address>
+                <p>1 Friesland Street, Durbanville, Western Cape, South Africa, 7550  </p>
+                <p>Phone: 0027 21 975 9727</p>
+                <p>Email: jmufetu@gmail.com</p>
+            </address>
+
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3314.26975791447!2d18.660535611927823!3d-33.831153246372814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1748960747299!5m2!1sen!2sza" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+
+
+        
+        <!-- Employee Profiles -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/employee1.webp" alt="John Doe - Lead Guide">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.webp" alt="Jane Smith - Customer Support">
+                    <figcaption>Jane Smith - Customer Support</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.webp" alt="Mike Johnson - Safety Coordinator">
+                    <figcaption>Mike Johnson - Safety Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+              <!-- Purpose of Message (Radio Buttons) -->
+       <div class="radio-group">
+    <div class="radio-label">
+        <input type="radio" id="general" name="purpose" value="general" required>
+        <label for="general">General Inquiry</label>
+    </div>
+    <div class="radio-label">
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label>
+    </div>
+    <div class="radio-label">
+        <input type="radio" id="website" name="purpose" value="website">
+        <label for="website">Website Suggestion</label>
+    </div>
+</div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="checkbox-container">
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Please subscribe to the monthly newsletter.</label>
+</div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Whitewater Rafting | Designed by Jacqueline Mufetu</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+        </nav>
+        <p><a href="images/contact-wireframe.webp">View Contact Us Wireframe</a></p>
+    </footer>
+
+</body>
+</html>
