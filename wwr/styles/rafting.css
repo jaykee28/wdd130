@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #0077cc;
     color: #333;
     margin: 0;
     padding: 0;
@@ -37,6 +37,147 @@ body {
     font-weight: bold;
 }
 
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    background-image: url('images/hero-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    position: absolute;
+    top: -30%; /* Moves the text higher */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds better readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: #0077cc;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #cc5500;
+}
+
+/* Trip List */
+.trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trip {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Trips Table */
+.trips-table {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #0077cc;
+    color: white;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer p a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Newsletter Signup */
+.newsletter {
+    text-align: center;
+    padding: 30px;
+    background: #e6e6e6;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+}
+
 /* Contact Section */
 .contact-info {
     text-align: center;
@@ -51,6 +192,7 @@ body {
 /* Employee Profiles */
 .team {
     text-align: center;
+    color: white;
     margin: 40px 0;
 }
 
@@ -71,6 +213,7 @@ body {
 
 figcaption {
     font-weight: bold;
+    color: white;
     margin-top: 10px;
 }
 
@@ -82,6 +225,13 @@ figcaption {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 8px;
+}
+
+.contact-info {
+    color: white;
+    background-color: #0077cc; /* Example: Blue background */
+    padding: 20px;
+    border-radius: 8px; /* Optional for styling */
 }
 
 .contact-form label, legend {
@@ -118,11 +268,9 @@ input[type="radio"] {
     justify-self: start; /* Aligns radio buttons to the left */
 }
 
-
 .radio-label input[type="radio"] {
     margin-right: 10px; /* Space between radio button and text */
 }
-
 
 /* Style the checkbox */
 input[type="checkbox"] {
@@ -161,6 +309,97 @@ label {
 
 .submit-button:hover {
     background-color: #005fa3;
+}
+
+/* Main Image Section */
+.main-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main-image .title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.main-image .description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 60%;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* History Section */
+.history {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.history h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.history .history-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.history .history-images img {
+    width: 50px;
+    height: 20%;
+}
+
+/* Adventures Section */
+.adventures {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.adventures h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.adventures .adventure-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adventures .adventure-images img {
+    width: 200px;
+    height: auto;
+}
+
+.adventures .adventure-images p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* Footer */
